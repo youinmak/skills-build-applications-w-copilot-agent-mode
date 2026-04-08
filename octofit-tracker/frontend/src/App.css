@@ -1,0 +1,135 @@
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #232946;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #6f42c1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link {
+  color: #6f42c1;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.App-link:hover {
+  color: #232946;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(90deg, #6f42c1 0%, #232946 100%);
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.1);
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-link {
+  color: #e0e0e0 !important;
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+th {
+  background: #6f42c1;
+  color: #fff;
+  font-weight: 600;
+}
+tr:nth-child(even) {
+  background: #f5f7fa;
+}
+
+/* Buttons */
+button, .btn {
+  background: linear-gradient(90deg, #6f42c1 0%, #232946 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(111, 66, 193, 0.08);
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #ffd700 0%, #6f42c1 100%);
+  color: #232946;
+}
+
+/* Links */
+a {
+  color: #6f42c1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #ffd700;
+}
+
+/* Container */
+.container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(111, 66, 193, 0.07);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
